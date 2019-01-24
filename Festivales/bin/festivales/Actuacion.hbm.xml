@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 ene. 2019 16:03:06 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="festivales.Actuacion" table="ACTUACION">
+        <id name="idAct" type="int">
+            <column name="IDACT" />
+            <generator class="increment" />
+        </id>
+        <property name="hora" type="int">
+            <column name="HORA" />
+        </property>
+        <property name="escenatio" type="java.lang.String">
+            <column name="ESCENATIO" />
+        </property>
+    </class>
+</hibernate-mapping>
